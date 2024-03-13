@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.heading{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-group{
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.form-group label{
+  flex: 1;
+  font-weight: bold;
+  margin-right: 1rem;  
+}
+
+.form-group input{
+  flex: 3;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+
+.btn{
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  background-color:  #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  /* margin-right: 1rem; */
+}
+
+.btn:hover{
+  background-color: #2980b9;
+}
+
+.btn.edit{
+  margin-right: 1rem;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+th,td{
+  padding: 0.5rem;
+  text-align: left;
+  /* border: 1px solid #ccc; */
+}
+
+th,td{
+  /* background-color: #eee; */
+  font-weight: bold;
+}
+
+td{
+  vertical-align: middle;
+}
+
+td:last-child{
+  text-align: center;
+}
+
+thead {
+  background-color: var(--table-color);
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+
+.sideBar{
+  width: 20%;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+  
+}
+
+.main{
+  width: 75%;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
+.sideBar1,.sideBar2{
+  display: flex;
+  margin: 5%;
+}
