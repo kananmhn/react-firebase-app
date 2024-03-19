@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
-import "./css/_color.scss";
+import  Header from "./components/Header/Header";
 
 function App() {
   const [fontColor, setFontColor] = useState("#333");
-  const [backgroundColor, setBackgroundColor] = useState("#fff");
 
   // Function to update font color
   const handleFontColorChange = (event) => {
@@ -13,7 +12,6 @@ function App() {
 
   const applyColor = () => {
     // Apply color to background
-    setBackgroundColor(fontColor);
 
     // Send a request to the server to update the JSON file
     fetch('http://localhost:3001/api/update-color', {
@@ -29,6 +27,8 @@ function App() {
 
   return (
     <div className="App">
+         <Header />
+     
       <input type="color" value={fontColor} onChange={handleFontColorChange} />
       <button onClick={applyColor}>Apply Color</button>
     </div>

@@ -1,11 +1,25 @@
+
 .App {
   text-align: center;
 }
 
 .container {
-  width: 100%;
+  width: 100% !important;
   position: relative;
 }
+
+
+.header{
+  display: block;
+  height: 74px;
+  background-color: #fff;
+  box-shadow: 0 -8px 9px 4px #000;
+  z-index: 3;
+  position: relative;
+  width: 100%;
+}
+
+
 
 .heading{
   font-size: 2rem;
