@@ -1,21 +1,44 @@
-import React, { useState } from 'react';
-
+import React, { useState, useEffect, useRef } from 'react';
+import { SketchPicker } from 'react-color';
 
 function BackgroundColor({sendDataToParent}) {
     const [BackgroundColor, setBackgroundColor] = useState("#ffffff");
-    const handleBackgroundColorChange = (event) => {
-      setBackgroundColor(event.target.value);  
-      sendDataToParent(event.target.value);
-      };
+    const [displayColorPicker, setDisplayColorPicker] = useState(false);
+    const popover = useRef();
+
+    const handleBackgroundColorChange = (color) => {
+      setBackgroundColor(color.hex);
+      sendDataToParent(color.hex);
+    };
+
+    const handleClick = () => {
+      setDisplayColorPicker(true);
+    };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (popover.current && !popover.current.contains(event.target)) {
+                setDisplayColorPicker(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
     return (
         <form>
         <label>
-        <span className='lable-text'>Body BG:</span>
-          <div className='color-box'><input type="color" value={BackgroundColor} onChange={handleBackgroundColorChange} />
-        </div></label>
-        {/* <input type="submit" value="Submit" /> */}
-      </form>
+        <span className='lable-text'>Body BG Color:</span>
+        <input type="text" value={BackgroundColor} onClick={handleClick} readOnly />
+        { displayColorPicker ? <div className="popover" ref={popover}>
+            <SketchPicker color={BackgroundColor} onChangeComplete={handleBackgroundColorChange} />
+        </div> : null }
+        </label>
+        </form>
     );
-};
+}
 
 export default BackgroundColor;

@@ -48,7 +48,8 @@ function App() {
         fontColor: fColor,
         backgroundColor: BGColor,
         BtnTextColor: BtnTextColor,
-        BtnBgcolor: BtnbgColor1
+        BtnBgcolor: BtnbgColor1,
+        fontSize: fontSize,
       }),
     });
   };
@@ -68,7 +69,7 @@ function App() {
             <button className="apply-color" onClick={applyColor}>Apply Color</button>
           </div>
           <div className="col-lg-9 right-section" style={{  backgroundColor: BGColor }}>
-             <LeftSideComponent fColor={fColor} BGColor={BGColor} BtntextColor={BtnTextColor} BtnbgColor1={BtnbgColor1} fontSize={fontSize}/>
+             <LeftSideComponent fColor={fColor} BGColor={BGColor} BtntextColor={BtnTextColor} BtnbgColor={BtnbgColor1} fontSize={fontSize}/>
             </div>
           </div>
         </div>

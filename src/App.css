@@ -154,7 +154,7 @@ body {
   padding: 10px 30px;
 }
 .max-container {
-  max-width: 1180px;
+  max-width: 1526px;
   margin: 0 auto;
   display: flex;
 }
@@ -214,4 +214,9 @@ body {
 .cmp-wrapper {
   border: 2px dashed #337ab7;
   padding: 20px;
+}
+
+.popover {
+  position: fixed;
+ z-index:  2
 }
