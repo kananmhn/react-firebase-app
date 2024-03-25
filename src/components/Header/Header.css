@@ -1,0 +1,14 @@
+.header h1 {
+    font-size: 36px;
+    line-height: 40px;
+    color: #0081c6;
+    text-align: center;
+  }
+  .header a {
+    text-decoration: none;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
