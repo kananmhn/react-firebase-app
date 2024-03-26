@@ -1,7 +1,7 @@
 {
-    "fontColor": "#556975",
-    "backgroundColor": "#b32323",
+    "fontColor": "#7da0b2",
+    "backgroundColor": "#cb8686",
     "BtnBgcolor": "#367495",
-    "BtnTextColor": "#b70404",
-    "fontSize": "24px"
+    "BtnTextColor": "#b56363",
+    "fontSize": "26px"
 }

@@ -37,6 +37,7 @@ function App() {
   console.log(BtnTextColor1);
   const applyColor = () => {
     // Apply color to background
+    console.log(fColor, BGColor, BtnTextColor1, BtnbgColor, fontSize);
 
     // Send a request to the server to update the JSON file
     fetch('http://localhost:3001/api/update-color', {
@@ -51,6 +52,11 @@ function App() {
         BtnBgcolor: BtnbgColor,
         fontSize: fontSize,
       }),
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch((error) => {
+        console.error('Error:', error);
     });
   };
 
