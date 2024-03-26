@@ -10,6 +10,7 @@
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
     "firebase": "^10.8.1",
+    "mysql": "^2.18.1",
     "node-gyp": "^10.0.1",
     "node-sass": "^7.0.3",
     "react": "^18.2.0",

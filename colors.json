@@ -1,8 +1,7 @@
 {
-    "fontColor": "#bd10e0",
-    "BGColor": "#c09b9b",
-    "backgroundColor": "#732b2b",
-    "BtnBgcolor": "#c600a9",
-    "BtnTextColor": "#066a3b",
+    "fontColor": "#556975",
+    "backgroundColor": "#b32323",
+    "BtnBgcolor": "#367495",
+    "BtnTextColor": "#b70404",
     "fontSize": "24px"
 }

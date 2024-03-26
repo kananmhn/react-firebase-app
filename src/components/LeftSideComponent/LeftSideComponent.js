@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 
-function LeftSideComponent({fColor,BtnTextColor,BtnbgColor1,fontSize}) {
+function LeftSideComponent({fColor,BtnTextColor1,BtnbgColor,fontSize}) {
+  console.log(BtnTextColor1);
     return(
         <>
         <h3 className="cmp-title">Button Component</h3>
             <div class="cmp-wrapper">
             <div style={{color: fColor}} className="button">
-              <button style={{ color: BtnTextColor, backgroundColor: BtnbgColor1 }} type="button" id="button-5487aab983" className="cmp-button" data-cmp-clickable="" data-cmp-data-layer="{&quot;button-5487aab983&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/button&quot;,&quot;dc:title&quot;:&quot;Button&quot;}}">
+              <button style={{ color: BtnTextColor1, backgroundColor: BtnbgColor }} type="button" id="button-5487aab983" className="cmp-button" data-cmp-clickable="" data-cmp-data-layer="{&quot;button-5487aab983&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/button&quot;,&quot;dc:title&quot;:&quot;Button&quot;}}">
                 <span className="cmp-button__text">Button</span>
               </button>
             </div>

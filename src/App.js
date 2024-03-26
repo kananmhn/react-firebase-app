@@ -4,14 +4,14 @@ import Header from "./components/Header/Header";
 import FontColor from "./components/FontColor/FontColor";
 import BackgroundColor from "./components/BackgroundColor/BacgroundColor";
 import BtnBgColor from "./components/BtnBgColor/BtnBgColor";
-import BtnTextColor1 from "./components/BtnTextColor/BtnTextColor";
+import BtnTextColor2 from "./components/BtnTextColor/BtnTextColor";
 import FontSize from "./components/FontSize/FontSize";
 import LeftSideComponent from "./components/LeftSideComponent/LeftSideComponent";
 function App() {
   const [fColor, setFColor] = useState("");
   const [BGColor, setBGColor] = useState("");
-  const [BtnTextColor, setBtntextColor] = useState("");
-  const [BtnbgColor1, setBtnbgColor] = useState("");
+  const [BtnTextColor1, setBtntextColor] = useState("");
+  const [BtnbgColor, setBtnbgColor] = useState("");
   const [fontSize, setfontSize] = useState("");
 
 
@@ -34,7 +34,7 @@ function App() {
   function handleDataFromChildFontSize(data) {
     setfontSize(data);
   }
-
+  console.log(BtnTextColor1);
   const applyColor = () => {
     // Apply color to background
 
@@ -47,8 +47,8 @@ function App() {
       body: JSON.stringify({
         fontColor: fColor,
         backgroundColor: BGColor,
-        BtnTextColor: BtnTextColor,
-        BtnBgcolor: BtnbgColor1,
+        BtnTextColor: BtnTextColor1,
+        BtnBgcolor: BtnbgColor,
         fontSize: fontSize,
       }),
     });
@@ -64,12 +64,12 @@ function App() {
             <FontColor sendDataToParent={handleDataFromChildFC} />
             <BackgroundColor sendDataToParent={handleDataFromChildBG} />
             <BtnBgColor sendDataToParent={handleDataFromChildBtnBg} />
-            <BtnTextColor1 sendDataToParent={handleDataFromChildBtnTxt} />
+            <BtnTextColor2 sendDataToParent={handleDataFromChildBtnTxt} />
             <FontSize sendDataToParent={handleDataFromChildFontSize} />
             <button className="apply-color" onClick={applyColor}>Apply Color</button>
           </div>
           <div className="col-lg-9 right-section" style={{  backgroundColor: BGColor }}>
-             <LeftSideComponent fColor={fColor} BGColor={BGColor} BtntextColor={BtnTextColor} BtnbgColor={BtnbgColor1} fontSize={fontSize}/>
+             <LeftSideComponent fColor={fColor} BGColor={BGColor} BtnTextColor1={BtnTextColor1} BtnbgColor={BtnbgColor} fontSize={fontSize}/>
             </div>
           </div>
         </div>
