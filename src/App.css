@@ -42,6 +42,13 @@
   padding: 0.5rem;
   border-radius: 5px;
   border: 2px solid #ccc;
+ 
+}
+.left-section input {
+  width: 130px;
+}
+.lable-text {
+  text-align: left;
 }
 
 
@@ -154,7 +161,7 @@ body {
   padding: 10px 30px;
 }
 .max-container {
-  max-width: 1526px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
 }
@@ -219,4 +226,54 @@ body {
 .popover {
   position: fixed;
  z-index:  2
+}
+.list {
+  text-align: left;
+}
+.right-section .transparent_btn {
+  background-color: transparent;
+  color: #0081c6;
+  border: 1px solid #0081c6;
+  margin-left: 15px;
+}
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 400px;
+}
+.select_base_theme {
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0000001f;
+    color: #596c7d;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    &:hover {
+      background-color: #0081c6;
+      color: #fff;
+    }
+}
+.text-center {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.modal-header {
+  justify-content: space-between;
+}
+.modal-header .close {
+  background: transparent;
+    border: none;
+    font-size: 22px;
+}
+.teamLogo{
+  width: 26%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); /* adjust as needed */
 }
