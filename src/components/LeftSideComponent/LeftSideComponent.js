@@ -1,19 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function LeftSideComponent({fColor,BtnTextColor1,BtnbgColor,fontSize}) {
   console.log(BtnTextColor1);
     return(
         <>
-        <h3 className="cmp-title">Button Component</h3>
-            <div class="cmp-wrapper">
-            <div style={{color: fColor}} className="button">
-              <button style={{ color: BtnTextColor1, backgroundColor: BtnbgColor }} type="button" id="button-5487aab983" className="cmp-button" data-cmp-clickable="" data-cmp-data-layer="{&quot;button-5487aab983&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/button&quot;,&quot;dc:title&quot;:&quot;Button&quot;}}">
-                <span className="cmp-button__text">Button</span>
-              </button>
-            </div>
-            </div>
-            
-            <h3 className="cmp-title">Text Component</h3>
+                 <h3 className="cmp-title">Text Component</h3>
             <div class="cmp-wrapper"> <div className="text" style={{ fontSize: fontSize,color: fColor }}>
               <div data-cmp-data-layer="{&quot;text-7569a6a7ea&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/text&quot;,&quot;xdm:text&quot;:&quot;<p><b>Bold </b>can be used to emphasize a word or phrase, as can <u>underline</u> and <i>italics.&amp;nbsp;</i><sup>Superscript</sup> and <sub>subscript</sub> are useful for mathematical (E = mc<sup>2</sup>) or scientific (h<sub>2</sub>O) expressions. Paragraph styles can provide alternative renderings, such as quote sections:</p><blockquote>&amp;quot;<i>Be yourself; everyone else is already taken&amp;quot;</i></blockquote><blockquote>- Oscar Wilde</blockquote>&quot;}}" id="text-7569a6a7ea" className="cmp-text">
                 <p><b>Bold </b>can be used to emphasize a word or phrase, as can <u>underline</u> and <i>italics.&nbsp;</i><sup>Superscript</sup> and <sub>subscript</sub> are useful for mathematical (E = mc<sup>2</sup>) or scientific (h<sub>2</sub>O) expressions. Paragraph styles can provide alternative renderings, such as quote sections:</p>
@@ -22,6 +13,17 @@ function LeftSideComponent({fColor,BtnTextColor1,BtnbgColor,fontSize}) {
               </div>
               </div></div>
            
+        <h3 className="cmp-title">Button Component</h3>
+            <div class="cmp-wrapper">
+              
+            <div style={{color: fColor}} className="button">
+              <button style={{ color: BtnTextColor1, backgroundColor: BtnbgColor }} type="button" id="button-5487aab983" className="cmp-button" data-cmp-clickable="" data-cmp-data-layer="{&quot;button-5487aab983&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/button&quot;,&quot;dc:title&quot;:&quot;Button&quot;}}">
+                <span className="cmp-button__text">Button</span>
+              </button>
+            </div>
+            </div>
+            
+   
               <h3 className="cmp-title">Breadcrumb Component</h3>
               <div class="cmp-wrapper">
               <div className="breadcrumb">
@@ -47,14 +49,17 @@ function LeftSideComponent({fColor,BtnTextColor1,BtnbgColor,fontSize}) {
                         <span itemprop="name">Level 1</span>
                       </a>
                     </li>
-                    <li style={{ color: fColor }} className="cmp-breadcrumb__item" data-cmp-data-layer="{&quot;breadcrumb-480245d3af-item-17eadd49ba&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/breadcrumb/item&quot;,&quot;repo:modifyDate&quot;:&quot;2022-03-08T10:11:15Z&quot;,&quot;dc:title&quot;:&quot;Level 2&quot;,&quot;xdm:linkURL&quot;:&quot;/content/core-components-examples/library/core-structure/breadcrumb/hidden/level-1/level-2.html&quot;}}" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                      <a className="cmp-breadcrumb__item-link" itemprop="item" data-cmp-clickable="" href="/content/core-components-examples/library/core-structure/breadcrumb/hidden/level-1/level-2.html">
+                    <li className="cmp-breadcrumb__item" data-cmp-data-layer="{&quot;breadcrumb-480245d3af-item-2ae1704812&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/breadcrumb/item&quot;,&quot;repo:modifyDate&quot;:&quot;2022-03-08T10:11:15Z&quot;,&quot;dc:title&quot;:&quot;Level 1&quot;,&quot;xdm:linkURL&quot;:&quot;/content/core-components-examples/library/core-structure/breadcrumb/hidden/level-1.html&quot;}}" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                      <a style={{ color: fColor }} className="cmp-breadcrumb__item-link" itemprop="item" data-cmp-clickable="" href="/content/core-components-examples/library/core-structure/breadcrumb/hidden/level-1.html">
                         <span itemprop="name">Level 2</span>
                       </a>
                     </li>
-                    <li className="cmp-breadcrumb__item cmp-breadcrumb__item--active" aria-current="page" data-cmp-data-layer="{&quot;breadcrumb-480245d3af-item-ab50f79f36&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/breadcrumb/item&quot;,&quot;repo:modifyDate&quot;:&quot;2022-03-08T10:11:15Z&quot;,&quot;dc:title&quot;:&quot;Breadcrumb&quot;,&quot;xdm:linkURL&quot;:&quot;/content/core-components-examples/library/core-structure/breadcrumb/hidden/level-1/level-2/breadcrumb.html&quot;}}" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                      <span itemprop="name">Breadcrumb</span>
+                    <li className="cmp-breadcrumb__item" data-cmp-data-layer="{&quot;breadcrumb-480245d3af-item-2ae1704812&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/breadcrumb/item&quot;,&quot;repo:modifyDate&quot;:&quot;2022-03-08T10:11:15Z&quot;,&quot;dc:title&quot;:&quot;Level 1&quot;,&quot;xdm:linkURL&quot;:&quot;/content/core-components-examples/library/core-structure/breadcrumb/hidden/level-1.html&quot;}}" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                      <a style={{ color: fColor }} className="cmp-breadcrumb__item-link" itemprop="item" data-cmp-clickable="" href="/content/core-components-examples/library/core-structure/breadcrumb/hidden/level-1.html">
+                        <span itemprop="name">Breadcrumb 2</span>
+                      </a>
                     </li>
+                   
                   </ol>
                 </nav>
               </div>
