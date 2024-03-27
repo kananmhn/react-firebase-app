@@ -159,6 +159,10 @@ body {
   font-size: 15px;
   line-height: 30px;
   padding: 10px 30px;
+  &:hover {
+    background-color: #0081c6;
+    color: #fff;
+  }
 }
 .max-container {
   max-width: 1200px;
