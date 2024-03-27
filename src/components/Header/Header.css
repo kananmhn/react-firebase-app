@@ -2,13 +2,17 @@
     font-size: 36px;
     line-height: 40px;
     color: #0081c6;
-    text-align: center;
+    /* text-align: center; */
   }
   .header a {
     text-decoration: none;
   }
   .header {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
   }
+  .logo{
+    width: 30%;
+    margin-top: 1%;
+}
