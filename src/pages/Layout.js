@@ -25,8 +25,22 @@ function Layout() {
     }
     const handleFileUpload = () => {
         const file = fileInput.current.files[0];
-        // Handle the file upload here
-        console.log(file);
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                const data = JSON.parse(event.target.result);
+                console.log(data);
+                // Assuming the JSON data is an array and you want to store the first item
+                const item = data[0];
+                localStorage.setItem('color_id', item.color_id);
+                localStorage.setItem('fColor', item.fontColor);
+                localStorage.setItem('BGColor', item.backgroundColor);
+                localStorage.setItem('BtnTextColor1', item.BtnTextColor);
+                localStorage.setItem('BtnbgColor', item.BtnBgcolor);
+                localStorage.setItem('fontSize', item.fontSize);
+            };
+            reader.readAsText(file);
+        }
         const modalElement = document.getElementById('uploadModal');
         const bsModal = new Modal(modalElement);
         bsModal.hide();
