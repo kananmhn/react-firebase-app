@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../App.css";
 import { Modal } from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './logo-1.png';
+import logo from './logo-1.jpg';
 
 function Layout() {
 
